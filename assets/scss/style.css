@@ -1,0 +1,815 @@
+@font-face {
+  font-family: "Sawarabi Mincho";
+  src: url("../fonts/SawarabiMincho-Regular.woff2") format("woff2"), url("../fonts/SawarabiMincho-Regular.woff") format("woff"), url("../fonts/SawarabiMincho-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Light.woff2") format("woff2"), url("../fonts/Montserrat-Light.woff") format("woff"), url("../fonts/Montserrat-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-ExtraBold.woff2") format("woff2"), url("../fonts/Montserrat-ExtraBold.woff") format("woff"), url("../fonts/Montserrat-ExtraBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff"), url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+/****************************************************** Button UI ********************************************/
+.btn {
+  font-family: "Montserrat";
+  font-weight: 400;
+  border-radius: 12px;
+  padding: 12px 24px;
+  transition: background-color 0.5s, color 0.5s;
+  text-decoration: none;
+  font-size: 20px;
+}
+.btn a {
+  color: #ffffff;
+}
+.btn:hover, .btn:focus {
+  text-decoration: none;
+  box-shadow: none;
+}
+.btn.btn-primary {
+  background-color: #0B2351;
+  color: #ffffff;
+  border: none;
+}
+.btn.btn-primary:hover {
+  background-color: #B79531;
+  color: #ffffff;
+}
+.btn.btn-secondary {
+  background-color: #B79531;
+  color: #ffffff;
+  border: none;
+}
+.btn.btn-secondary:hover {
+  background-color: #0B2351;
+  color: #ffffff;
+}
+.btn.btn-outline-primary {
+  background: transparent;
+  border: 2px solid #0B2351;
+  color: #0B2351;
+}
+.btn.btn-outline-primary:hover {
+  background: #0B2351;
+  color: white;
+}
+.btn.btn-outline-secondary {
+  background: transparent;
+  border: 2px solid #B79531;
+  color: #B79531;
+}
+.btn.btn-outline-secondary:hover {
+  background: #B79531;
+  color: #ffffff;
+}
+.btn.btn-light {
+  background: #ffffff;
+  border-color: #ffffff;
+  color: #0B2351;
+}
+.btn.btn-light:hover {
+  background: #0B2351;
+  color: #ffffff;
+}
+
+@font-face {
+  font-family: "Sawarabi Mincho";
+  src: url("../fonts/SawarabiMincho-Regular.woff2") format("woff2"), url("../fonts/SawarabiMincho-Regular.woff") format("woff"), url("../fonts/SawarabiMincho-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Light.woff2") format("woff2"), url("../fonts/Montserrat-Light.woff") format("woff"), url("../fonts/Montserrat-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-ExtraBold.woff2") format("woff2"), url("../fonts/Montserrat-ExtraBold.woff") format("woff"), url("../fonts/Montserrat-ExtraBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff"), url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+/****************************************************** Button UI ********************************************/
+.btn {
+  font-family: "Montserrat";
+  font-weight: 400;
+  border-radius: 12px;
+  padding: 12px 24px;
+  transition: background-color 0.5s, color 0.5s;
+  text-decoration: none;
+  font-size: 20px;
+}
+.btn a {
+  color: #ffffff;
+}
+.btn:hover, .btn:focus {
+  text-decoration: none;
+  box-shadow: none;
+}
+.btn.btn-primary {
+  background-color: #0B2351;
+  color: #ffffff;
+  border: none;
+}
+.btn.btn-primary:hover {
+  background-color: #B79531;
+  color: #ffffff;
+}
+.btn.btn-secondary {
+  background-color: #B79531;
+  color: #ffffff;
+  border: none;
+}
+.btn.btn-secondary:hover {
+  background-color: #0B2351;
+  color: #ffffff;
+}
+.btn.btn-outline-primary {
+  background: transparent;
+  border: 2px solid #0B2351;
+  color: #0B2351;
+}
+.btn.btn-outline-primary:hover {
+  background: #0B2351;
+  color: white;
+}
+.btn.btn-outline-secondary {
+  background: transparent;
+  border: 2px solid #B79531;
+  color: #B79531;
+}
+.btn.btn-outline-secondary:hover {
+  background: #B79531;
+  color: #ffffff;
+}
+.btn.btn-light {
+  background: #ffffff;
+  border-color: #ffffff;
+  color: #0B2351;
+}
+.btn.btn-light:hover {
+  background: #0B2351;
+  color: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  color: #151D48;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  color: #000000;
+  font-family: "Montserrat";
+}
+
+a {
+  font-family: "Montserrat";
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+}
+a:hover, a:focus {
+  color: #1E4AE9;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+label {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+}
+
+blockquote {
+  padding: 1rem;
+  border-left: 4px solid #0B2351;
+  font-style: italic;
+  color: #737791;
+}
+
+img,
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.image {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+small {
+  font-size: 80%;
+  color: #737791;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
+  h5 {
+    font-size: 1.1rem;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+}
+/****************************************************** Login UI ********************************************/
+.login {
+  padding: 40px 0;
+}
+.login__content {
+  width: 85%;
+  height: 100%;
+}
+.login__logo {
+  max-width: 150px;
+  margin-bottom: 80px;
+}
+.login__title {
+  font-size: 36px;
+  font-weight: 400;
+  font-family: "Sawarabi Mincho";
+  margin-bottom: 2rem;
+}
+.login__subtitle {
+  font-size: 20px;
+  font-family: "Montserrat";
+  color: #313957;
+  margin-bottom: 2rem;
+}
+.login__form {
+  display: flex;
+  flex-direction: column;
+}
+.login__form-group {
+  margin-bottom: 25px;
+}
+.login__form-group label {
+  display: block;
+  margin-bottom: 3px;
+}
+.login__form-group .login__input {
+  width: 100%;
+  padding: 13px 18px;
+  border: 1px solid #D4D7E3;
+  background-color: #F7FBFF;
+  border-radius: 12px;
+  font-size: 14px;
+}
+.login__form-group .login__input:focus, .login__form-group .login__input:focus-visible {
+  border: 1px solid #D4D7E3;
+  outline: 1px solid #D4D7E3;
+}
+.login__form-group .login__input::-moz-placeholder {
+  color: #8897AD;
+}
+.login__form-group .login__input::placeholder {
+  color: #8897AD;
+}
+.login__form-group .login__forgot {
+  display: block;
+  text-align: right;
+  font-size: 16px;
+  margin-top: 25px;
+  color: #1E4AE9;
+  transition: all 0.5s ease-in-out;
+}
+.login__form-group .login__forgot:hover {
+  text-decoration: underline;
+}
+.login__divider {
+  position: relative;
+  text-align: center;
+  margin: 40px 0 20px;
+  color: #294957;
+}
+.login__divider::before, .login__divider::after {
+  content: "";
+  position: absolute;
+  width: 45%;
+  height: 1px;
+  background-color: #CFDFE2;
+  top: 50%;
+  text-align: center;
+}
+.login__divider::before {
+  left: 0;
+}
+.login__divider::after {
+  right: 0;
+}
+.login__social {
+  padding: 12px 24px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #F7FBFF;
+}
+.login__social a {
+  color: #313957;
+}
+.login__social--google, .login__social--facebook {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.login__signup {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 15px;
+}
+.login__signup a {
+  color: #1E4AE9;
+  font-weight: 400;
+  transition: all 0.5s ease-in;
+}
+.login__signup a:hover {
+  font-weight: 500;
+  text-decoration: underline;
+}
+.login__reserved {
+  text-align: center;
+  margin-top: 90px;
+  color: #959CB6;
+}
+.login__image img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/****************************************************** SignUp UI ********************************************/
+.signup {
+  padding: 2rem 0;
+}
+.signup__logo {
+  margin-bottom: 1.5rem;
+}
+.signup__logo-img {
+  width: 150px;
+}
+.signup__toggle {
+  margin-top: 1rem;
+}
+.signup__toggle-wrapper {
+  background-color: #F7FBFF;
+  border: 1px solid #D4D7E3;
+  border-radius: 12px;
+  padding: 4px;
+}
+.signup__toggle .signup__tab {
+  border: none;
+  background-color: #F7FBFF;
+  color: #000000;
+  padding: 0.7rem 3.5rem;
+  font-size: 18px;
+  font-family: "Sawarabi Mincho";
+  font-weight: 400;
+  cursor: pointer;
+}
+.signup__toggle .signup__tab--active {
+  background-color: #0B2351;
+  color: #ffffff;
+  border-radius: 12px;
+}
+.signup__form .signup__input,
+.signup__form .signup__select {
+  width: 100%;
+  padding: 13px 18px;
+  border: 1px solid #D4D7E3;
+  background-color: #F7FBFF;
+  border-radius: 12px;
+  font-size: 14px;
+}
+.signup__form .signup__input:focus, .signup__form .signup__input:focus-visible,
+.signup__form .signup__select:focus,
+.signup__form .signup__select:focus-visible {
+  border: 1px solid #D4D7E3;
+  outline: 1px solid #D4D7E3;
+}
+.signup__form .signup__input::-moz-placeholder, .signup__form .signup__select::-moz-placeholder {
+  color: #8897AD;
+}
+.signup__form .signup__input::placeholder, .signup__form .signup__input option,
+.signup__form .signup__select::placeholder,
+.signup__form .signup__select option {
+  color: #8897AD;
+}
+.signup__form .signup__select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: #8897AD;
+  background-image: url("data:image/svg+xml,%3Csvg fill='%236c757d' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 24px 24px;
+}
+.signup__form .signup__label {
+  display: block;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+.signup__section .signup__checkboxes {
+  display: flex;
+  gap: 1rem;
+}
+.signup__section .signup__checkboxes label {
+  font-size: 16px;
+  color: #8897AD;
+}
+.signup__section .signup__checkboxes input[type=checkbox] {
+  width: 14px;
+  height: 14px;
+  accent-color: #0B2351;
+  border: 1px solid #F7FBFF;
+}
+.signup__actions {
+  margin-top: 50px;
+}
+.signup__actions-login {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.signup__actions-footer {
+  color: #313957;
+}
+.signup__actions-footer a {
+  color: #1E4AE9;
+  font-weight: 500;
+}
+.signup__actions-footer a:hover {
+  text-decoration: underline;
+}
+.signup__divider {
+  margin: 1rem 0;
+  text-align: center;
+  color: #999;
+  position: relative;
+}
+.signup__divider::before, .signup__divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background: #ccc;
+}
+.signup__divider::before {
+  left: 0;
+}
+.signup__divider::after {
+  right: 0;
+}
+.signup__social {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.signup__social-btn {
+  padding: 12px 24px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #F7FBFF;
+}
+.signup__social-btn a {
+  color: #313957;
+}
+.signup__social-btn--google, .signup__social-btn--facebook {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/****************************************************** Dashboard UI ********************************************/
+.dashboard {
+  display: flex;
+  height: 100vh;
+}
+.dashboard__sidebar {
+  width: 250px;
+  min-height: 100vh;
+  background-color: #ffffff;
+  transition: transform 0.4s ease-in-out;
+  z-index: 1000;
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 992px) {
+  .dashboard__sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    height: 100%;
+    transition: transform 0.4s ease-in-out;
+  }
+  .dashboard__sidebar.show-toggle {
+    transform: translateX(0%);
+  }
+}
+.dashboard__toggle {
+  z-index: 1001;
+  background: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 992px) {
+  .dashboard__toggle {
+    display: inline;
+    z-index: 1000;
+  }
+}
+.dashboard__logo {
+  margin: 20px auto;
+  text-align: center;
+}
+.dashboard__logo img {
+  width: 130px;
+}
+.dashboard__nav {
+  margin: 25px 0 0;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.dashboard__menu {
+  list-style: none;
+  padding: 0;
+}
+.dashboard__menu-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color: #737791;
+  font-size: 16px;
+  font-family: 400;
+}
+.dashboard__menu-item .dashboard__icon {
+  transition: fill 0.3s ease-in-out;
+  fill: #737791;
+}
+.dashboard__menu-item:hover, .dashboard__menu-item--active {
+  background-color: #B79531;
+  color: #ffffff;
+}
+.dashboard__menu-item:hover .dashboard__icon, .dashboard__menu-item--active .dashboard__icon {
+  fill: #ffffff;
+}
+.dashboard__icon {
+  font-size: 1.2rem;
+}
+.dashboard__main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fa;
+}
+.dashboard__topbar {
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dashboard__topbar--heading {
+  font-family: #0B2351;
+  font-size: 18px;
+  color: #151D48;
+}
+.dashboard__user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.dashboard__notification {
+  position: relative;
+  cursor: pointer;
+}
+.dashboard__notification::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #EB5757;
+}
+.dashboard__profile {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.dashboard__profile--name {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  color: #151D48;
+}
+.dashboard__profile--name span {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.dashboard__profile--name--role {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #737791;
+}
+.dashboard__profile-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 0.5rem;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0.5rem 0;
+  min-width: 150px;
+  z-index: 100;
+  display: none;
+}
+.dashboard__profile-dropdown--item {
+  padding: 0.5rem 1rem;
+  font-size: 14px;
+  color: #737791;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.dashboard__profile-dropdown--item:hover {
+  background-color: #B79531;
+  color: #ffffff;
+}
+.dashboard__profile.is-open .dashboard__profile-dropdown {
+  display: block;
+}
+.dashboard__content {
+  flex-grow: 1;
+  padding: 2rem;
+}/*# sourceMappingURL=style.css.map */

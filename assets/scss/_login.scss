@@ -1,0 +1,155 @@
+/****************************************************** Login UI ********************************************/
+
+.login {
+    padding: 40px 0;
+
+    &__content {
+        width: 85%;
+        height: 100%;
+
+    }
+
+    &__logo {
+        max-width: 150px;
+        margin-bottom: 80px;
+    }
+
+    &__title {
+        font-size: 36px;
+        font-weight: $font-weight-regular;
+        font-family: $secondary-font;
+        margin-bottom: 2rem;
+    }
+
+    &__subtitle {
+        font-size: 20px;
+        font-family: $primary-font;
+        color: $subTitle;
+        margin-bottom: 2rem;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__form-group {
+        margin-bottom: 25px;
+
+        label {
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        .login__input {
+            width: 100%;
+            padding: 13px 18px;
+            border: 1px solid $border;
+            background-color: $bg;
+            border-radius: 12px;
+            font-size: 14px;
+
+            &:focus,
+            &:focus-visible {
+                border: 1px solid $border;
+                outline: 1px solid $border;
+            }
+
+            &::placeholder {
+                color: $text-secondary;
+            }
+        }
+
+        .login__forgot {
+            display: block;
+            text-align: right;
+            font-size: 16px;
+            margin-top: 25px;
+            color: $link;
+            transition: all 0.5s ease-in-out;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__divider {
+        position: relative;
+        text-align: center;
+        margin: 40px 0 20px;
+        color: #294957;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            width: 45%;
+            height: 1px;
+            background-color: $divider;
+            top: 50%;
+            text-align: center;
+        }
+
+        &::before {
+            left: 0;
+        }
+
+        &::after {
+            right: 0;
+        }
+    }
+
+    &__social {
+        padding: 12px 24px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 12px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: $bg;
+
+        a {
+            color: $subTitle;
+        }
+
+        &--google,
+        &--facebook {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+    }
+
+    &__signup {
+        text-align: center;
+        font-size: 18px;
+        margin-top: 15px;
+
+        a {
+            color: $link;
+            font-weight: $font-weight-regular;
+            transition: all 0.5s ease-in;
+
+            &:hover {
+                font-weight: $font-weight-medium;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__reserved {
+        text-align: center;
+        margin-top: 90px;
+        color: #959CB6;
+
+    }
+
+    &__image {
+        img {
+            width: 100%;
+            border-radius: 12px;
+        }
+    }
+}

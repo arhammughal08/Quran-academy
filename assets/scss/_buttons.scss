@@ -1,0 +1,76 @@
+ /****************************************************** Button UI ********************************************/
+
+ .btn {
+     font-family: $primary-font;
+     font-weight: $font-weight-regular;
+     border-radius: 12px;
+     padding: 12px 24px;
+     transition: background-color $transition-speed, color $transition-speed;
+     text-decoration: none;
+     font-size: 20px;
+
+     a {
+         color: $white;
+     }
+
+     &:hover,
+     &:focus {
+         text-decoration: none;
+         box-shadow: none;
+     }
+
+     &.btn-primary {
+         background-color: $primary;
+         color: $white;
+         border: none;
+
+         &:hover {
+             background-color: $secondary;
+             color: $white;
+         }
+     }
+
+     &.btn-secondary {
+         background-color: $secondary;
+         color: $white;
+         border: none;
+
+         &:hover {
+             background-color: $primary;
+             color: $white;
+         }
+     }
+
+     &.btn-outline-primary {
+         background: transparent;
+         border: 2px solid $primary;
+         color: $primary;
+
+         &:hover {
+             background: $primary;
+             color: white;
+         }
+     }
+
+     &.btn-outline-secondary {
+         background: transparent;
+         border: 2px solid $secondary;
+         color: $secondary;
+
+         &:hover {
+             background: $secondary;
+             color: $white;
+         }
+     }
+
+     &.btn-light {
+         background: $white;
+         border-color: $white;
+         color: $primary;
+
+         &:hover {
+             background: $primary;
+             color: $white;
+         }
+     }
+ }

@@ -1,0 +1,180 @@
+/****************************************************** SignUp UI ********************************************/
+
+.signup {
+    padding: 2rem 0;
+
+    &__logo {
+        margin-bottom: 1.5rem;
+
+        &-img {
+            width: 150px;
+        }
+    }
+
+    &__toggle {
+        margin-top: 1rem;
+
+        &-wrapper {
+            background-color: $bg;
+            border: 1px solid $border;
+            border-radius: 12px;
+            padding: 4px;
+        }
+
+        .signup__tab {
+            border: none;
+            background-color: $bg;
+            color: $black;
+            padding: 0.7rem 3.5rem;
+            font-size: 18px;
+            font-family: $secondary-font;
+            font-weight: $font-weight-regular;
+            cursor: pointer;
+
+            &--active {
+                background-color: $primary;
+                color: $white;
+                border-radius: 12px;
+            }
+        }
+    }
+
+    &__form {
+
+        .signup__input,
+        .signup__select {
+            width: 100%;
+            padding: 13px 18px;
+            border: 1px solid $border;
+            background-color: $bg;
+            border-radius: 12px;
+            font-size: 14px;
+
+
+            &:focus,
+            &:focus-visible {
+                border: 1px solid $border;
+                outline: 1px solid $border;
+            }
+
+            &::placeholder,
+            & option {
+                color: $text-secondary;
+            }
+        }
+
+        .signup__select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            color: $text-secondary;
+            background-image: url("data:image/svg+xml,%3Csvg fill='%236c757d' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 0.75rem center;
+            background-size: 24px 24px;
+
+        }
+
+        .signup__label {
+            display: block;
+            margin-top: 3px;
+            margin-bottom: 3px;
+        }
+    }
+
+    &__section {
+        .signup__checkboxes {
+            display: flex;
+            gap: 1rem;
+
+            label {
+                font-size: 16px;
+                color: $text-secondary;
+            }
+
+            input[type="checkbox"] {
+                width: 14px;
+                height: 14px;
+                accent-color: $primary;
+                border: 1px solid $bg;
+            }
+        }
+    }
+
+    &__actions {
+        margin-top: 50px;
+
+        &-login {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        &-footer {
+            color: $subTitle;
+
+            a {
+                color: $link;
+                font-weight: $font-weight-medium;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    &__divider {
+        margin: 1rem 0;
+        text-align: center;
+        color: #999;
+        position: relative;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: 40%;
+            height: 1px;
+            background: #ccc;
+        }
+
+        &::before {
+            left: 0;
+        }
+
+        &::after {
+            right: 0;
+        }
+    }
+
+    &__social {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        &-btn {
+            padding: 12px 24px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: $bg;
+
+            a {
+                color: $subTitle;
+            }
+
+            &--google,
+            &--facebook {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+            }
+        }
+    }
+}
